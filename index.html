@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      background-color: lightgray;
+      margin: 0;
+    }
+    .header-section {
+      background-color: #FF6262;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* margin: 0; */
+      /* padding: 100px; */
+    }
+    .header-item {
+      margin-top: 2%;
+    }
+    .logo-img {
+      margin-top: 2%;
+      height: 7rem;
+      width: 12rem;
+      border-radius: 10px
+      
+    
+
+    }
+    .brand-column{
+      margin-top: 2%;
+      height: 7rem;
+      width: 11rem;
+      
+
+    }
+    
+    
+    .user-icon {
+      height: 100px;
+      width: 100px;
+      border: 1px solid;
+      /* margin-top: 5%; */
+    }
+    .search-box-cont {
+      margin-right: 13%;
+      align-self: auto;
+    }
+    .search-box {
+      height: 30px;
+      width: 616px;
+      margin-bottom: 1%;
+      text-align: right;
+      padding: 0.6rem;
+      font-size: large;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      background-color: #FF6262;
+      padding: 2rem;
+    }
+    .link-item {
+      margin-right: 3%;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+    }
+    .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      /* width: 62.5rem;
+      height: 19.4375rem; */
+      flex-shrink: 0;
+      background-color: #FFBCBC;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .coupon-column {
+      position: relative;
+      align-self: auto;
+      top: 1.8rem;
+      /* bottom: 10rem; */
+      /* border: 1px solid; */
+    }
+    .copy-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: aliceblue;
+      height: 1.9rem;
+      padding-right: 1rem;
+      border: 1px dashed black;
+    }
+    .copy-icon {
+      background-color: #98A8F8;
+      border: 1px solid black;
+      height: 100%;
+      position: relative;
+      left: -10px;
+    }
+    .coupon-text {
+      font-size: 2.8rem;
+      position: relative;
+      bottom: 1rem;
+    }
+    .footer {
+      background-color: #2B2B2B;
+      color: white;
+      margin-top: 9rem;
+      height: 13.8125rem;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-section">
+      <!-- lOGO -->
+        <img src="images/Shabakkat.jpeg" alt="logo" class="logo-img">
+      <!-- search box -->
+      <div class="search-box-cont header-item">
+        <input type="text" name="" id="" class="search-box" placeholder="...أبحث عن متجر">
+      </div>
+      <!-- login icon -->
+      <a href=""><img src="images/user icon.png" alt="" class="user-icon header-item"></a>
+    </div>
+
+    <nav>
+      <div class="links">
+        <a href="" class="link-item">الرئيسية</a>
+        <a href="NewCoupon.html" class="link-item">كوبون جديد</a>
+        <a href="" class="link-item">تواصل معنا</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Body -->
+  <section class="cards">
+    <!-- The whole card -->
+    <div class="card">
+      <!-- The first column -->
+      <div class="coupon-column">
+        <div class="coupon-box">
+          <div class="copy-btn">
+            <div class="copy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" >
+                <path d="M19.5 1.29999H5.20001C3.77001 1.29999 2.60001 2.46999 2.60001 3.89999V20.8C2.60001 21.515 3.18501 22.1 3.90001 22.1C4.61501 22.1 5.20001 21.515 5.20001 20.8V5.19999C5.20001 4.48499 5.78501 3.89999 6.50001 3.89999H19.5C20.215 3.89999 20.8 3.31499 20.8 2.59999C20.8 1.88499 20.215 1.29999 19.5 1.29999ZM24.7 6.49999H10.4C8.97001 6.49999 7.80001 7.66999 7.80001 9.09999V27.3C7.80001 28.73 8.97001 29.9 10.4 29.9H24.7C26.13 29.9 27.3 28.73 27.3 27.3V9.09999C27.3 7.66999 26.13 6.49999 24.7 6.49999ZM23.4 27.3H11.7C10.985 27.3 10.4 26.715 10.4 26V10.4C10.4 9.68499 10.985 9.09999 11.7 9.09999H23.4C24.115 9.09999 24.7 9.68499 24.7 10.4V26C24.7 26.715 24.115 27.3 23.4 27.3Z" fill="#001246"/>
+              </svg>
+            </div>
+            <h2 >new123</h2>
+          </div>  
+          
+        </div>
+        <p>استعمله 732 متسوق</p>
+        <p>DEC/ينتهي في 10</p>
+      </div>
+      <!-- The seconde column -->
+      <div class="discount-column">
+        <h2 class="coupon-text">%خصم 10</h2>
+      </div>
+      <!-- The last column -->
+      <div class="brand-column">
+        <img src="images/amazon.jpeg" alt="" width="200" height="100" alt="">
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- The first column -->
+      <div class="coupon-column">
+        <div class="coupon-box">
+          <div class="copy-btn">
+            <div class="copy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" >
+                <path d="M19.5 1.29999H5.20001C3.77001 1.29999 2.60001 2.46999 2.60001 3.89999V20.8C2.60001 21.515 3.18501 22.1 3.90001 22.1C4.61501 22.1 5.20001 21.515 5.20001 20.8V5.19999C5.20001 4.48499 5.78501 3.89999 6.50001 3.89999H19.5C20.215 3.89999 20.8 3.31499 20.8 2.59999C20.8 1.88499 20.215 1.29999 19.5 1.29999ZM24.7 6.49999H10.4C8.97001 6.49999 7.80001 7.66999 7.80001 9.09999V27.3C7.80001 28.73 8.97001 29.9 10.4 29.9H24.7C26.13 29.9 27.3 28.73 27.3 27.3V9.09999C27.3 7.66999 26.13 6.49999 24.7 6.49999ZM23.4 27.3H11.7C10.985 27.3 10.4 26.715 10.4 26V10.4C10.4 9.68499 10.985 9.09999 11.7 9.09999H23.4C24.115 9.09999 24.7 9.68499 24.7 10.4V26C24.7 26.715 24.115 27.3 23.4 27.3Z" fill="#001246"/>
+              </svg>
+            </div>
+            <h2 >new123</h2>
+          </div>  
+          
+        </div>
+        <p>استعمله 732 متسوق</p>
+        <p>DEC/ينتهي في 10</p>
+      </div>
+      <!-- The seconde column -->
+      <div class="discount-column">
+        <h2 class="coupon-text">%خصم 15</h2>
+      </div>
+      <!-- The last column -->
+      <div class="brand-column">
+        <img src="images/noon.png" alt="" width="200" height="100" alt="">
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- The first column -->
+      <div class="coupon-column">
+        <div class="coupon-box">
+          <div class="copy-btn">
+            <div class="copy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" >
+                <path d="M19.5 1.29999H5.20001C3.77001 1.29999 2.60001 2.46999 2.60001 3.89999V20.8C2.60001 21.515 3.18501 22.1 3.90001 22.1C4.61501 22.1 5.20001 21.515 5.20001 20.8V5.19999C5.20001 4.48499 5.78501 3.89999 6.50001 3.89999H19.5C20.215 3.89999 20.8 3.31499 20.8 2.59999C20.8 1.88499 20.215 1.29999 19.5 1.29999ZM24.7 6.49999H10.4C8.97001 6.49999 7.80001 7.66999 7.80001 9.09999V27.3C7.80001 28.73 8.97001 29.9 10.4 29.9H24.7C26.13 29.9 27.3 28.73 27.3 27.3V9.09999C27.3 7.66999 26.13 6.49999 24.7 6.49999ZM23.4 27.3H11.7C10.985 27.3 10.4 26.715 10.4 26V10.4C10.4 9.68499 10.985 9.09999 11.7 9.09999H23.4C24.115 9.09999 24.7 9.68499 24.7 10.4V26C24.7 26.715 24.115 27.3 23.4 27.3Z" fill="#001246"/>
+              </svg>
+            </div>
+            <h2 >new123</h2>
+          </div>  
+          
+        </div>
+        <p>استعمله 732 متسوق</p>
+        <p>DEC/ينتهي في 10</p>
+      </div>
+      <!-- The seconde column -->
+      <div class="discount-column">
+        <h2 class="coupon-text">%خصم 20</h2>
+      </div>
+      <!-- The last column -->
+      <div class="brand-column">
+        <img src="images/amazon.jpeg" alt="" width="200" height="100" alt="">
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- The first column -->
+      <div class="coupon-column">
+        <div class="coupon-box">
+          <div class="copy-btn">
+            <div class="copy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" >
+                <path d="M19.5 1.29999H5.20001C3.77001 1.29999 2.60001 2.46999 2.60001 3.89999V20.8C2.60001 21.515 3.18501 22.1 3.90001 22.1C4.61501 22.1 5.20001 21.515 5.20001 20.8V5.19999C5.20001 4.48499 5.78501 3.89999 6.50001 3.89999H19.5C20.215 3.89999 20.8 3.31499 20.8 2.59999C20.8 1.88499 20.215 1.29999 19.5 1.29999ZM24.7 6.49999H10.4C8.97001 6.49999 7.80001 7.66999 7.80001 9.09999V27.3C7.80001 28.73 8.97001 29.9 10.4 29.9H24.7C26.13 29.9 27.3 28.73 27.3 27.3V9.09999C27.3 7.66999 26.13 6.49999 24.7 6.49999ZM23.4 27.3H11.7C10.985 27.3 10.4 26.715 10.4 26V10.4C10.4 9.68499 10.985 9.09999 11.7 9.09999H23.4C24.115 9.09999 24.7 9.68499 24.7 10.4V26C24.7 26.715 24.115 27.3 23.4 27.3Z" fill="#001246"/>
+              </svg>
+            </div>
+            <h2 >new123</h2>
+          </div>  
+          
+        </div>
+        <p>استعمله 732 متسوق</p>
+        <p>DEC/ينتهي في 10</p>
+      </div>
+      <!-- The seconde column -->
+      <div class="discount-column">
+        <h2 class="coupon-text">%خصم 50</h2>
+      </div>
+      <!-- The last column -->
+      <div class="brand-column">
+        <img src="images/namshi.jpeg" alt="" width="200" height="100" alt="">
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- The first column -->
+      <div class="coupon-column">
+        <div class="coupon-box">
+          <div class="copy-btn">
+            <div class="copy-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" >
+                <path d="M19.5 1.29999H5.20001C3.77001 1.29999 2.60001 2.46999 2.60001 3.89999V20.8C2.60001 21.515 3.18501 22.1 3.90001 22.1C4.61501 22.1 5.20001 21.515 5.20001 20.8V5.19999C5.20001 4.48499 5.78501 3.89999 6.50001 3.89999H19.5C20.215 3.89999 20.8 3.31499 20.8 2.59999C20.8 1.88499 20.215 1.29999 19.5 1.29999ZM24.7 6.49999H10.4C8.97001 6.49999 7.80001 7.66999 7.80001 9.09999V27.3C7.80001 28.73 8.97001 29.9 10.4 29.9H24.7C26.13 29.9 27.3 28.73 27.3 27.3V9.09999C27.3 7.66999 26.13 6.49999 24.7 6.49999ZM23.4 27.3H11.7C10.985 27.3 10.4 26.715 10.4 26V10.4C10.4 9.68499 10.985 9.09999 11.7 9.09999H23.4C24.115 9.09999 24.7 9.68499 24.7 10.4V26C24.7 26.715 24.115 27.3 23.4 27.3Z" fill="#001246"/>
+              </svg>
+            </div>
+            <h2 >new123</h2>
+          </div>  
+          
+        </div>
+        <p>استعمله 732 متسوق</p>
+        <p>DEC/ينتهي في 10</p>
+      </div>
+      <!-- The seconde column -->
+      <div class="discount-column">
+        <h2 class="coupon-text">%خصم 10</h2>
+      </div>
+      <!-- The last column -->
+      <div class="brand-column images">
+        <img src="images/noon.png" alt="" width="200" height="100">
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer">
+      <h2ه</h2>
+    </div>
+  </footer>
+</body>
+</html>

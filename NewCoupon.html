@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        :root {
+            --primary-color: #342d2d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #ECE9E6, #FFFFFF);
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .login-container:hover {
+            transform: scale(1.05);
+        }
+
+        .login-container h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+            
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid var(--primary-color);
+            outline: none;
+        }
+
+        .input-container input[type="password"] {
+            -webkit-text-security: disc;
+        }
+
+        .input-container i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .login-button {
+            background: black;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-button:hover {
+            background-color: #333;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .options {
+            width: 230px;
+            height: 40px;
+
+        }
+       .po{
+        opacity: 0.5;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-container">
+            <h1 style="color: #ab6b6b;">كوبون جديد </h1>
+            <div class="input-container ">
+               
+                <label class="po" for="options">اختر الشريكة:</label>
+                
+                <select class="options" id="options" name="options" placeholder="خدم">
+                    <option value="option1">امزون <img src="logo.png" alt="Logo"></option>
+                    <option value="option1">نمشي<img src="logo.png" alt="Logo"></option>
+                    <option value="option2">نون <img src="logo.png" alt="Logo"></option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                
+                <input type="email" placeholder="كود الخصم ">
+            </div>
+
+            <div class="input-container">
+               
+                
+                <input type="number" id="percentage" placeholder="نسبه الخصم (%)" min="0" max="100" required>
+            </div>
+            <div class="input-container ">
+               
+                <label  style="opacity: 0.5;" for="dateInput"> تاريخ الانتهاء:</label>
+                <input type="date" id="dateInput" name="dateInput">
+               
+            </div>
+            
+            
+           
+            <a href="index.html"> <button class="login-button">حفظ</button></a>
+
+        </div>
+
+</body>
+
+</html>
